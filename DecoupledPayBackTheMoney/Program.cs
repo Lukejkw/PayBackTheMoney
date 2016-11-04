@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PayBackTheMoney
+namespace DecoupledPayBackTheMoney
 {
     public class Program
     {
