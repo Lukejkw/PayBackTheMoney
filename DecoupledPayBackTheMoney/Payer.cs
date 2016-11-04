@@ -43,7 +43,7 @@ namespace DecoupledPayBackTheMoney
         public bool TryPayMoney(DateTime timeToPayBackTheMoney, bool canDelayProcess)
         {
             DateTime now = _dateTimeProvider.GetCurrentDateTime();
-            if (!canDelayProcess && DateTime.Now >= now)
+            if (!canDelayProcess && timeToPayBackTheMoney <= now)
             {
                 // Damn, have to pay
                 _payer.Pay(7000000M);
