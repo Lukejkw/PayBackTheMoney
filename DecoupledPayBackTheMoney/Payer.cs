@@ -49,11 +49,11 @@ namespace DecoupledPayBackTheMoney
                 _payer.Pay(7000000M);
 
                 // Send Thuli email
-                _notificationService.Send("jacob@anc.gov.za", "tuli@madonsela.gov.za", "I pay bak moneyies.\r\n Love, Jacob");
+                _notificationService.Send("jacob@anc.gov.za", "thuli@madonsela.gov.za", "I pay bak moneyies.\r\n Love, Jacob");
                 return true;
             }
 
-            // "HA HA HA! "Inkandla"" HA HA HA
+            // "HA HA HA! "Nkandla"" HA HA HA
             return false;
         }
     }
